@@ -6,80 +6,115 @@
     <body>
         <section> 
            <h2>Our Products</h2>
-           <div>
-               <div>
-                   <strong>Product 1</strong>
+           <div class='shopitems'>
+
+           
+            <div class='shopitem'>
+               
+                <span class='shopitemtitle'>Product 1</span>
+               
+               <img src='One.png' class='shopitemimage'>
+
+               <div class='shopitemdetails'>
+
+                   <span class='shopitemprice'>$1.99</span>
+                   <button role='button' class='shopitembtn'>ADD TO CART</button>
+                   
                </div>
-               <img src='One.png'>
-               <div>
-                   <span>$1.99</span>
-                   <button role='button'>ADD TO CART</button>
-               </div>
-               <div>
-                <strong>Product 2</strong>
+           </div>
+
+           <div class='shopitem'>
+               
+                    <span class='shopitemtitle'>Product 2</span>
+                
+                <img src='Two.jpg' class='shopitemimage'>
+
+                <div class='shopitemdetails'>
+
+                    <span class='shopitemprice'>$2.99</span>
+                    <button role='button' class='shopitembtn'>ADD TO CART</button>
+                    
+                </div>
+           </div>
+
+           <div class='shopitem'>
+               
+            <span class='shopitemtitle'>Product 3</span>
+           
+           <img src='Three.png' class='shopitemimage'>
+
+           <div class='shopitemdetails'>
+
+               <span class='shopitemprice'>$3.99</span>
+               <button role='button' class='shopitembtn'>ADD TO CART</button>
+               
+           </div>
             </div>
-            <img src='Two.jpg'>
-            <div>
-                <span>$2.99</span>
-                <button role='button'>ADD TO CART</button>
+
+           <div class='shopitem'>
+               
+            <span class='shopitemtitle'>Product 4</span>
+           
+           <img src='Four.jpg' class='shopitemimage'>
+
+           <div class='shopitemdetails'>
+
+               <span class='shopitemprice'>$4.99</span>
+               <button role='button' class='shopitembtn'>ADD TO CART</button>
+               
+           </div>
             </div>
-        </div>
-        <div>
-            <strong>Product 3</strong>
-        </div>
-        <img src='Three.png'>
-        <div>
-            <span>$3.99</span>
-            <button role='button'>ADD TO CART</button>
-        </div>
-    </div>
-    <div>
-        <strong>Product 1</strong>
-    </div>
-    <img src='Four.jpg'>
-    <div>
-        <span>$4.99</span>
-        <button role='button'>ADD TO CART</button>
-    </div>
+           
+</div>
 </div>
            </div>
         </section>
         <section>
             <h2>CART</h2>
-            <div>
-                <strong>ITEM</strong>
-                &lt;&gt;
-                <strong>PRICE</strong>
-                &lt;&gt;
-                <strong>QUANTITY</strong>
-                &lt;&gt;
+            <div class='cart-row'>
+                <span class='cart-item cart-header cart-column'>ITEM</span>
+                
+                <span class='cart-price cart-header cart-column'>PRICE</span>
+                
+                <span class='cart-quantity cart-header cart-column'>QUANTITY</span>
+                
             </div>
-            <div>
-                <img src='One.png' width='100px' class='small'>
-                <span>Product 1</span>
-                &lt;&gt;
-                <span>$1.99</span>
-                &lt;&gt;
-                <input type='number' value='1'>
-                <button role='button'>REMOVE</button>
+            <div class='cart-items'>
+            <div class='cart-row'>
+                <div class='cart-item cart-column'>
+                <img src='One.png' width='100px' class='small cart-item-image'>
+                <span class='cart-item-title'>Product 1</span>
+                </div>
+
+                <span class='cart-price cart-column'>$1.99</span>
+                
+                <div class='cart-quantity cart-column'>
+                <input type='number' value='1' class='cart-quantity-input'>
+                <button role='button' class='cartremovebtn'>REMOVE</button>
+                </div>
             </div>
-            <div>
-                <img src='Two.jpg' width='100px' class='small'>
-                <span>Product 2</span>
-                &lt;&gt;
-                <span>$2.99</span>
-                &lt;&gt;
-                <input type='number' value='1'>
-                <button role='button'>REMOVE</button>
+            <div class='cart-row'>
+                <div class='cart-item cart-column'>
+                <img src='Two.jpg' width='100px' class='small cart-item-image'>
+                <span class='cart-item-title'>Product 2</span>
+                </div>
+
+                <span class='cart-price cart-column'>$2.99</span>
+                
+                <div class='cart-quantity cart-column'>
+                <input type='number' value='1' class='cart-quantity-input'>
+                <button role='button' class='cartremovebtn'>REMOVE</button>
+                </div>
             </div>
-            <hr>
-            <div>
-                <strong>Total</strong>
-                <span>$4.98</span>
+        </div>
+            
+            <div class='cart-total'>
+                <strong class='cart-total-title'>Total</strong>
+                <span class='cart-total-price'>$4.98</span>
             </div>
-            <div>
-                <button role='button'>Purchase</button>
-            </div>
+            
+                <button role='button' class='shopitembtn purchasebtn'>Purchase</button>
+            
         </section>
     </body>
 </html>
