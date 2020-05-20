@@ -1,5 +1,6 @@
 // What follows is the initialisation of the remove buttons
 updateCartTotal()
+setInterval(updateCartTotal, 500)
 var removeCartItemButtons = document.getElementsByClassName('cartremovebtn')
 for (var j = 0; j < removeCartItemButtons.length; j++) {
     var button = removeCartItemButtons[j]
@@ -9,17 +10,9 @@ for (var j = 0; j < removeCartItemButtons.length; j++) {
         updateCartTotal()
     })
 }
-// What follows is the initialisation of the quantity inputs
-for (var i = 0; i < quantityInputs.length; i++) {
-    var input = quantityInputs[i]
-    input.addEventListener('change', function(event) {
-        var input = event.target
-        if (isNaN(input.value) || input.value <= 0) {
-            input.value = 1
-        }
-        updateCartTotal()
-    }
-}
+// What follows is the initialisation of the update cart total button
+var updateButton = document.getElementsByClassName('purchasebtn')[1]
+updateButton.addEventListener('click', updateCartTotal())
 
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
